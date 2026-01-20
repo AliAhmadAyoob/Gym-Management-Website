@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="pricing">
+    <h1>Choose Your Plan</h1>
+    <div class="pricing-grid">
+        {% for plan in plans %}
+        <div class="price-card {{ 'featured' if plan.featured }}">
+            <h3>{{ plan.name }}</h3>
+            <p class="cost">${{ plan.price }}/mo</p>
+            <ul>
+                {% for feature in plan.features %}
+                <li>{{ feature }}</li>
+                {% endfor %}
+            </ul>
+            <a href="{{ url_for('register') }}" class="btn">Get Started</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
+<!-- important for mine -->
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Video Compilation Page</title>
+</head>
+<body>
+<main></main>
+<h1> Video Compilation Page</h1><hr>
+<section><h2><h2>for learning follow the website</h2></h2><iframe src="https://islamicdigitalstudio.com"
+height="150" width="300"></iframe></section><hr>
+<section><h2></h2><iframe src="https://islamicdigitalstudio.com"height="150" width="300"></iframe></section><hr>
+<section><iframe src="https://islamicdigitalstudio.com" height="150" width="300"></iframe ><h2></h2></section><hr>
+</body>
+</html>

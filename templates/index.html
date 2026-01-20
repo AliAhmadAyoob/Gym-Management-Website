@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header class="hero">
+    <div class="hero-content">
+        <h1>BUILD YOUR LEGACY</h1>
+        <p>Expert coaching and world-class equipment at your fingertips.</p>
+        <a href="{{ url_for('membership') }}" class="btn">Start Now</a>
+    </div>
+</header>
+<section class="features">
+    <h2>Our Core Services</h2>
+    <div class="feature-grid">
+        <div class="card"><h3>Personal Training</h3><p>One-on-one sessions tailored to you.</p></div>
+        <div class="card"><h3>Group Classes</h3><p>Yoga, HIIT, and Spin classes daily.</p></div>
+        <div class="card"><h3>Nutrition Plans</h3><p>Fuel your body the right way.</p></div>
+    </div>
+</section>
+{% endblock %}
